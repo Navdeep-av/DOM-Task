@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Removing the P tag</title>
+</head>
+<body>
+    <p class = "ptag">1st Paragraph</p>
+    <p class = "ptag">2st Paragraph</p>
+    <p class = "ptag">3st Paragraph</p>
+    <p class = "ptag">4st Paragraph</p>
+</body>
+</html>
+
+<script>
+    const getElem = document.getElementsByClassName("ptag")
+    console.log(getElem)
+
+    for (i = 0; i<getElem.length; i++){
+
+      
+        getElem[i].innerHTML = ""
+
+    }
+
+</script>

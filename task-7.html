@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Creating the List Items from JS Dynamically</title>
+</head>
+<body>
+
+    <h1>Creating the List Items from JS Dynamically</h1>
+    <div id="box">
+
+
+    </div>
+</body>
+</html>
+
+<script>
+
+// Get the Box Container
+const boxElem = document.getElementById('box')    
+
+// Creating the UL Element and inserting in the box container
+const ulElem = document.createElement("ul");
+console.log(ulElem)
+boxElem.appendChild(ulElem)
+
+// Creating the Li Element and inserting in the UL tag
+
+const liContent = ["Html", "CSS", "JS"]    
+
+for(let i = 0; i<3; i++){
+    const liOne = document.createElement('li')
+    liOne.innerHTML = liContent[i]
+    ulElem.appendChild(liOne)
+}
+</script>

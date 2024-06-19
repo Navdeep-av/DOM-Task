@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Creating the TO-Do WebApp</title>
+</head>
+<body>
+    
+    <h1>Add the Item Below</h1> <input type="text"  id = "addfield"></input>
+    <br>
+
+    <button id="add" onclick="addValue()">Add the Item</button>
+    <button id="delete" onclick="deleteValue()">Delete the Item</button>
+
+    <div id="box">
+        <ul id="ultag"></ul>
+    </div>
+
+</body>
+</html>
+
+<script>
+
+    // get the UL Element
+    const boxElem = document.getElementById('ultag');
+
+
+    function addValue(){
+    // Fetching the Input Field
+    const inputElem = document.getElementById('addfield')
+
+    
+    // Get the Value from text/Input Field
+    const textValue = inputElem.value;
+
+
+    // Creating the LI Element
+    const liElem = document.createElement('li')    
+    liElem.innerHTML = textValue
+    boxElem.appendChild(liElem)
+
+    }
+
+    
+
+
+</script>    

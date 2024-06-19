@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Changing the Body Bacground Color after Button Click</title>
+</head>
+<body>
+    
+    <h1>Changing the Body Bacground Color after Button Click</h1>  
+    
+    <button id = 'red' style="background-color: red;">Red Background Color</button>
+    <button id = 'green' style="background-color: green; color: aliceblue;">Green Background Color</button>
+    <button id = 'white' >White Background Color</button>
+    <button id = 'blue' style="background-color: blue; color: beige;">Blue Background Color</button>
+
+</body>
+</html>
+
+<script>
+
+    
+    // Get the Body Element for changing the background color.
+
+    const bodyElem = document.getElementsByTagName('body')
+
+    // Get the button Element for Red Background color.
+    const redBtn = document.getElementById('red')
+    const greenBtn = document.getElementById('green')
+    const whiteBtn = document.getElementById('white')
+    const blueBtn = document.getElementById('blue')
+
+
+    redBtn.addEventListener("click", function(){
+
+        bodyElem[0].style.backgroundColor = 'red';
+
+    })
+    
+    greenBtn.addEventListener("click", function(){
+
+        bodyElem[0].style.backgroundColor = 'green';
+
+    })
+
+    
+    whiteBtn.addEventListener("click", function(){
+
+        bodyElem[0].style.backgroundColor = 'white';
+        document.getElementsByTagName('h1')[0].style.color = 'black'
+    })
+
+    
+    blueBtn.addEventListener("click", function(){
+
+        bodyElem[0].style.backgroundColor = 'blue';
+        document.getElementsByTagName('h1')[0].style.color = 'white'
+    })
+
+
+
+</script>    

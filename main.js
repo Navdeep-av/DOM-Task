@@ -1,0 +1,1 @@
+console.log("Task 2 - Showing Console Using External JS File.")

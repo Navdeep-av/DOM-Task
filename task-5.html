@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Change the Paragraph Content after button Click</title>
+</head>
+<body>
+    <p>This Content is in the Paragraph Text and I will change this text to something else Dynamically with the help of JS</p> 
+
+    <button id="btn_click">Click Button to change Text</button> 
+</body>
+</html>
+
+<script>
+    const btnElem = document.getElementById("btn_click")
+    btnElem.addEventListener('click', function(){
+
+         document.getElementsByTagName('p')[0].innerHTML = "I have changed the Text with the help of JS"
+
+    })
+   
+   
+</script>    
